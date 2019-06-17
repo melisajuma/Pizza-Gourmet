@@ -30,7 +30,7 @@ input[type=text] , select {
     box-sizing: border-box;
   }
   
-  input[type=submit] {>>
+  input[type=submit] {
     width: 100%;
     background-color: green;
     color: white;
@@ -42,7 +42,7 @@ input[type=text] , select {
   input[type=submit]:hover {
     background-color:greenyellow;
   }
-  forms{
+  forms{>>
       height:800px;
   }
   .message{
