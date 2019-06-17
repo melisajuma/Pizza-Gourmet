@@ -1,12 +1,15 @@
 body{
-  background-image: url('');  
+  background-color:black; 
+  color:white; 
 }    
-h1{
+ h1{
     text-align:center;
+    font-size: 50px;
     
 }
 h2{
     text-align:center;
+
     
 }
 .header{
@@ -74,5 +77,15 @@ input[type=text] , select {
 }
 .card-footer{
     background-color: silver;
+}
+p{
+    font-family: 'Indie Flower', cursive; 
+}
+#Contacts{
+    color:black;
+    font: weight 600;
+}
+h5{
+    color:black;
 }
 

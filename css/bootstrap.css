@@ -4058,11 +4058,14 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  margin-top:3rem;
+  margin-left: 25rem;
 }
 
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  color: white;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4119,7 +4122,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: white;
 }
 
 .nav-fill .nav-item {
@@ -4207,6 +4210,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  color:white;
 }
 
 .navbar-collapse {
@@ -4622,7 +4626,7 @@ input[type="button"].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(150, 25, 25, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 

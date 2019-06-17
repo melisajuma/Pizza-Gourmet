@@ -7,12 +7,12 @@
     <title>Pizza Gourmet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="css/styles.css" rel="stylesheet" text="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" text="text/css">
-
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Merriweather&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://images.pexels.com/photos/774487/pexels-photo-774487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>>>
 </head>
 
 <body>
@@ -35,8 +35,7 @@
                 <a class="nav-link" href="#Contacts">Contacts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+
         </ul>
 
     </div>
@@ -101,9 +100,11 @@
                     </select>
 
                     <p> Select the crust type you want: </p>
-                    <input type="checkbox" name="Crust" value="Crispy">Crispy<br>
-                    <input type="checkbox" name="Glutten-free" value="Glutten-free">Glutten-free<br>
-                    <input type="checkbox" name="Stuffed" value="Stuffed" checked="checked"> Stuffed<br>
+                    <form>
+                        <input type="radio" name="auto_renew" value="Crispy">Crispy<br>
+                        <input type="radio" name="auto_renew" value="Glutten-free">Glutten-free<br>
+                        <input type="radio" name="auto_renew" value="Stuffed"> Stuffed<br>
+                    </form>
 
                     <p> Select the topping you want: </p>
                     <input type="checkbox" name="Chicken" value="Chicken">Chicken<br>
@@ -122,7 +123,7 @@
 
         <div class="col-md-5">
             <div class="container-fluid">
-                <h3 class="">Delivery form details</h3>
+                <h3 id="Delivery">Delivery form details</h3>
                 <span class="message"></span>
                 <form action="" class="" id="submission">
                     <input type="text" placeholder="FullName" id="fullname">
@@ -162,8 +163,8 @@
         <div class="col-md-4">
             <p id="rev">"This is the first time I have ever got a great experience from this store. It was delivered on time
                 and the driver was friendly and brought plenty of condiments. This is how customer service is supposed to
-                be and he should be teaching other employees how it's supposed to be done. Well done Pizza Hut in West Memphis.
-                The product has always been great. Now they have the customer service. Couldn't have asked for anything better."Happy
+                be and they should be teaching other employees how it's supposed to be done. Well done Pizza Gourmet. The
+                product has always been great. Now they have the customer service. Couldn't have asked for anything better."Happy
                 customer </p>
 
 
@@ -173,11 +174,10 @@
         <div class="card-footer">
             Below are our contact details:
             <h5 class="card-title">Contact Information</h5>
-            <p>
-                <img src="../Images/social_icons/twitter.png" alt="twitter icon">
-                <img src="./Images/social_icons/facebook.png" alt="facebook icon">
-                <img src="Images/social_icons/pinterest.png" alt="pinterest icon">
-                <img src="Images/social_icons/skype.png" alt="skype icon">
+            <p id="Contacts">
+                Tel: 002 345 675 123<br> Phone number:0780 234 234/ 0756 223 456<br> Email: pizzaGourmet@yahoo.com<br> twitter:
+                _gourmetpizza
+                <br>
 
             </p>
             <a href="#Contacts" class="btn btn-primary">Connect with us!</a>
