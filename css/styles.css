@@ -1,0 +1,75 @@
+body{
+  background-image: url('');  
+  color 
+}    
+h1{
+    text-align:center;
+    
+}
+h2{
+    text-align:center;
+    
+}
+.header{
+    background-image: url('https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin-bottom: 5%;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+form {
+    
+}
+input[type=text] , select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 5px;
+  }
+  
+  input[type=submit]:hover {
+    background-color:greenyellow;
+  }
+  forms{
+      height:800px;
+  }
+  .message{
+    height:800px;
+  }
+  .card-footer{
+      text-align:center;
+  }
+  #review{
+      height: 450px;
+      width: 450px;
+      margin-left:5%;
+      margin-top:10%;
+  }
+  .pics{
+      margin-bottom:5%;
+      margin-top:5%;
+
+  }
+  #rev{
+      margin-top:17%;
+      text-align:left;
+      font-size: 20px;
+      font-weight: 600;
+  }
+.customerReview{
+    background-image:url('https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    opacity:0.8px;
+}

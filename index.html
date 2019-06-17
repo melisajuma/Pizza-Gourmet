@@ -1,0 +1,185 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza Gourmet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" text="text/css">
+
+    <link rel="shortcut icon" href="https://images.pexels.com/photos/774487/pexels-photo-774487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="header">>
+        <h1>Pizza Gourmet</h1>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#what we offer">what we offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Order now">Order now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Delivery">Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contacts">Contacts</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+</div>
+<div class="pics">
+    <h2>What we offer</h2>
+    <div class="row" id="what we offer">
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/774487/pexels-photo-774487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+            <p>Meat Deluxe</p>
+           
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/263041/pexels-photo-263041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+            <p>Veg Tikka</p>
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/845802/pexels-photo-845802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+            <p>Chicken & Mushroom</p>
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/7658/food-pizza-box-chalkboard.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="img-fluid">
+            <p>Hawaiian</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="img-fluid">
+            <p>Peri-peri Chicken</p>
+
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/724216/pexels-photo-724216.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="img-fluid">
+            <p>Beef Pepperoni </p>
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/2271194/pexels-photo-2271194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="img-fluid">
+            <p>BBQ Steak</p>
+        </div>
+        <div class="col-md-3">
+            <img src="https://images.pexels.com/photos/2274787/pexels-photo-2274787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="img-fluid">
+            <p>Chicken Macon BBQ</p>
+
+        </div>
+    </div>
+</div>
+    <div class="row" class="forms">
+        <div class="col-md-5">
+            <div class="container-fluid" >
+                <div id="Order now"></div>
+                <h3 class="">Place your order</h3>
+                <span class="message"></span>
+                <form action="" class="" id="submission">
+                    <select id="Size" name="Size">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    
+                    <p> Select the crust type you want: </p>
+                    <input type="checkbox" name="Crust" value="Crispy">Crispy<br>
+                    <input type="checkbox" name="Glutten-free" value="Glutten-free">Glutten-free<br>
+                    <input type="checkbox" name="Stuffed" value="Stuffed" checked="checked"> Stuffed<br>
+                
+                    <p> Select the topping you want: </p>
+                    <input type="checkbox" name="Chicken" value="Chicken">Chicken<br>
+                    <input type="checkbox" name="Beef" value="Beef">Beef<br>
+                    <input type="checkbox" name="Vegetables" value="Vegetables" checked="Vegetables"> Vegetables<br>
+                    
+                    <input type="submit" id="submitbutton">
+                </form>
+
+            </div>
+
+        </div>
+        <div class="col-md-1">
+            
+        </div>
+        
+        <div class="col-md-5">
+            <div class="container-fluid">
+                <h3 class="">Delivery form details</h3>
+                <span class="message"></span>
+                <form action="" class="" id="submission">
+                    <input type="text" placeholder="FullName" id="fullname">
+                    <input type="text" placeholder="Input your Email e.g john@gmail.com" id="mail">
+                    <input type="text" placeholder="Input your phone number" id="phone">
+                    <select id="location" name="location"placeholder="Kindly type in your location within Nairobi">
+                        <option value="Westlands">Westlands</option>
+                        <option value="CBD">CBD</option>
+                        <option value="Karen">Karen</option>
+                        <option value="South B">South B</option>
+                        <option value="South C">South C</option>
+                        <option value="Lower Kabete">Lower Kabete</option>
+                        <option value="Kikuyu">Kikuyu</option>
+                        <option value="Kitengela">Kitengela</option>
+                        <option value="Kitisuru">Kitisuru</option>
+                        <option value="Syokimau">Syokimau</option>
+                        <option value="Kasarani">Kasarani</option>
+                    </select>
+                    <br>
+                    <input type="submit" id="submitbutton">
+                </form>
+
+            </div>
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+<div class="row" >
+    <div class="col-md-4" >
+        <img src="https://images.pexels.com/photos/2323182/pexels-photo-2323182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="review">
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-4">
+        <p id="rev">This is the first time I have ever got a great experience from this store. It was delivered on time and the driver was friendly and brought plenty of condiments. This is how customer service is supposed to be and he should be teaching other employees how it's supposed to be done. Well done Pizza Hut in West Memphis. The product has always been great. Now they have the customer service. Couldn't have asked for anything better. </p>
+
+
+    </div>
+</div>
+<div class="card">
+        <div class="card-footer">
+          Below are our contact details:
+        </div>
+        
+          <h5 class="card-title">Contact Information</h5>
+          <p>
+            <img src="/Images/social_icons/behance.png" alt="twitter icon">
+            <img src="" alt="facebook icon">
+            <img src="images/social_icons/pinterest.png" alt="pinterest icon">
+            <img src="images/social_icons/skype.png" alt="skype icon">
+        
+           </p>
+          <a href="#Contacts" class="btn btn-primary">Connect with us!</a>
+        </div>
+      </div>
+</body>
+
+</html>
