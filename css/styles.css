@@ -72,3 +72,7 @@ input[type=text] , select {
     background-image:url('https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     opacity:0.8px;
 }
+.card-footer{
+    background-color: silver;
+}
+

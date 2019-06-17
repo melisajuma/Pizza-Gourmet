@@ -1,4 +1,4 @@
-This is a website ordering pizza by placing an order and choose whether you want it to be delivered to your or you will go collect it yourself to the nearest branch , {17 June 2019}>>
+This is a website ordering pizza by placing an order and choose whether you want it to be delivered to your or you will go collect it yourself to the nearest branch , {17 June 2019}
 
 By {Melisa JUma}
 Description
