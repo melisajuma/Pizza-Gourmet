@@ -9,7 +9,7 @@ h2{
     text-align:center;
     
 }
-.header{>>
+.header{
     background-image: url('https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
     height:100%;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ h2{
 form {
     
 }
-input[type=text] , select {
+input[type=text] , select {>>
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
