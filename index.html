@@ -94,26 +94,30 @@
                 <span class="message"></span>
                 <form action="" class="" id="submission">
                     <select id="Size" name="Size">
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large">Large</option>
+                        <option value="" id=""></option>
+                        <option value="Small" id="Size">Small</option>
+                        <option value="Medium" id="Size">Medium</option>
+                        <option value="Large" id="Size">Large</option>
                     </select>
 
                     <p> Select the crust type you want: </p>
-                    <form id="crust" >
-                        <input type="radio" name="auto_renew" value="Crispy">Crispy<br>
-                        <input type="radio" name="auto_renew" value="Glutten-free">Glutten-free<br>
-                        <input type="radio" name="auto_renew" value="Stuffed"> Stuffed<br>
-                    </form>
+                    <div id="crust" >
+                        <input type="checkbox" name="auto_renew" value="Crispy"id="crust">Crispy<br>
+                        <input type="checkbox" name="auto_renew" value="Glutten-free"id="crust">Glutten-free<br>
+                        <input type="checkbox" name="auto_renew" value="Stuffed"id="crust"> Stuffed<br>
+                    </div>
 
                     <p > Select the topping you want: </p>
-                    <div class="topping">
-                            <input type="checkbox" name="Chicken" value="Chicken">Chicken<br>
-                            <input type="checkbox" name="Beef" value="Beef">Beef<br>
-                            <input type="checkbox" name="Vegetables" value="Vegetables" checked="Vegetables"> Vegetables<br>
+                    <div id="">
+                            <input type="checkbox" name="Chicken" value="Chicken"id="topping">Chicken<br>
+                            <input type="checkbox" name="Beef" value="Beef" id="topping">Beef<br>
+                            <input type="checkbox" name="Vegetables" id="topping" value="Vegetables" > Vegetables<br>
         
                             <input type="submit" id="submitbutton">
                             <p id="order-cost">Order-cost:</p>
+                           <p id="pizzaSize"> </p> 
+                           <p id="pizzaCrust"></p>
+                           <p id="pizzaTopping"></p>
 
                     </div>
                    
