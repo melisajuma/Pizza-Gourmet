@@ -15,7 +15,7 @@ order.prototype.pizzaCost = function () {
     } else if (this.size == "Medium") {
         this.price += 600;
     } else if (this.size == "Large") {
-        this.price +=  800;
+        this.price += 800;
     }
     if (this.crust == "Glutten-free") {
         this.price += 50;
@@ -33,12 +33,15 @@ order.prototype.pizzaCost = function () {
     }
     return this.price;
 }
-order.prototype.totalCostOfOrders= function () {
+
+
+order.prototype.totalCostOfOrders = function () {
     var shoppingCartTotal = 0;
-    for (var order = 0; order < totalOrderPrice.length; order++) {
+    for (var shoppingCartTotal = 0; shoppingCartTotal < order.length; shoppingCartTotal++) {
         shoppingCartTotal += totalOrderPrice[order];
     }
     return shoppingCartTotal;
+
 }
 
 var totalCostOfOrders = [];
@@ -47,25 +50,24 @@ $(document).ready(function () {
     $("form#submission").submit(function (event) {
         event.preventDefault();
         var size = $("select#Size").val()
-        var crust = $("input#crust").val();
-        var topping = $("input#topping").val();
+        var crust = $("select#Crust").val();
+        var topping = $("select#topping").val();
+        var newPizzaOrder = new order(size, crust, topping);
+        newPizzaOrder.pizzaCost();
+        totalCostOfOrders.push(newPizzaOrder.price);
 
-    var newPizzaOrder = new order(size, crust, topping);
-    newPizzaOrder.pizzaCost();
-    totalCostOfOrders.push(newPizzaOrder.price);
-
-    $("#order-cost").show();
-    $("#pizzaSize").append("\t" + "\t" + size);
-    $("#pizzaCrust").append("\t" + "\t" + crust);
-    $("#pizzaTopping").append("\t" + "\t" + topping);
-    $("#order-cost").append("\t" + "\t" + newPizzaOrder.totalCostOfOrders());
-     });     
-     $("").click(function(){
-           location.reload();
-        });
+        $("#order-cost").show();
+        $("#pizzaSize").append("\t" + "\t" + size);
+        $("#pizzaCrust").append("\t" + "\t" + crust);
+        $("#pizzaTopping").append("\t" + "\t" + topping);
+        $("#order-cost").append("\t" + "\t" + newPizzaOrder.totalCostOfOrders());
+    });
+    $("").click(function () {
+        location.reload();
+    });
 
 
 });
-        
 
-       
+
+

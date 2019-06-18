@@ -101,31 +101,32 @@
                     </select>
 
                     <p> Select the crust type you want: </p>
-                    <div id="crust">
-                        <input type="checkbox" name="auto_renew" value="Crispy" id="crust">Crispy<br>
-                        <input type="checkbox" name="auto_renew" value="Glutten-free" id="crust">Glutten-free<br>
-                        <input type="checkbox" name="auto_renew" value="Stuffed" id="crust"> Stuffed<br>
-                    </div>
+                    <select id="Crust" name="Size">
+                        <option value="" id=""></option>
+                        <option value="Crispy" id="Crust">Crispy</option>
+                        <option value="Glutten Free" id="Crust">Glutten Free</option>
+                        <option value="Stuffed" id="Crust">Stuffed</option>
+                    </select>
 
                     <p> Select the topping you want: </p>
-                    <div id="">
-                        <input type="checkbox" name="Chicken" value="Chicken" id="topping">Chicken<br>
-                        <input type="checkbox" name="Beef" value="Beef" id="topping">Beef<br>
-                        <input type="checkbox" name="Vegetables" id="topping" value="Vegetables"> Vegetables<br>
-
-                        <input type="submit" id="submitbutton">
-                        <p id="order-cost" ¬>Order-cost:</p>
-                        <p id="pizzaSize"> </p>
-                        <p id="pizzaCrust"></p>
-                        <p id="pizzaTopping"></p>
-
-                    </div>
-
+                    <select id="topping" name="Size">
+                        <option value="" id=""></option>
+                        <option value="Chicken" id="topping">Chicken</option>
+                        <option value="Beef" id="topping">Beef</option>
+                        <option value="Vegetables" id="topping">Vegetables</option>
+                    </select>
+                    <input type="submit" id="submitbutton">
+                    <p id="order-cost" ¬>Order-cost:</p>
+                    <p id="pizzaSize"> </p>
+                    <p id="pizzaCrust"></p>
+                    <p id="pizzaTopping"></p>
                 </form>
-
             </div>
 
+
         </div>
+
+
         <div class="col-md-1">
 
         </div>
@@ -134,7 +135,7 @@
             <div class="container-fluid">
                 <h3 id="Delivery">Delivery form details</h3>
                 <span class="message"></span>
-                <form action="" class="" id="submission">
+                <form action="" class="" id="sub">
                     <input type="text" placeholder="FullName" id="fullname">
                     <input type="text" placeholder="Input your Email e.g john@gmail.com" id="mail">
                     <input type="text" placeholder="Input your phone number" id="phone">
@@ -152,7 +153,7 @@
                         <option value="Kasarani">Kasarani</option>
                     </select>
                     <br>
-                    <input type="submit" id="submitbutton">
+                    <input type="submit" id="address button">
                 </form>
 
             </div>
@@ -160,7 +161,6 @@
         </div>
         <div class="col-md-1"></div>
     </div>
-
     <div class="row">
         <div class="col-md-4">
             <img src="https://images.pexels.com/photos/2323182/pexels-photo-2323182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -170,6 +170,7 @@
 
         </div>
         <div class="col-md-4">
+            <h2>Customer Review</h2>
             <p id="rev">"This is the first time I have ever got a great experience from this store. It was delivered on time
                 and the driver was friendly and brought plenty of condiments. This is how customer service is supposed to
                 be and they should be teaching other employees how it's supposed to be done. Well done Pizza Gourmet. The
