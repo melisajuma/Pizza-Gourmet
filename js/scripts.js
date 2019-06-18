@@ -1,4 +1,4 @@
-var singleOrderCost = function (size, crust, topping, price) {
+var order = function (size, crust, topping) {
     this.size = size;
     this.crust = crust;
     this.topping = topping;
@@ -37,7 +37,27 @@ order.prototype.pizzaCost = function () {
 var totalCostOfOrders = [];
 
 $(document).ready(function () {
-    $("img").click(function () {
-        alert("This is an image");
-    });
+    $("#submission").submit(function (event) {
+        event.preventDefault();
+        var size = $("select#Size").val()
+        var crust = $("input#crust").val();
+        var topping = $("input.topping").val();
+
+    var newPizzaOrder = new order(size, crust, topping);
+    totalCostOfOrders.push(newPizzaOrder.price);
+
+    $("#order-cost").show();
+    $("#order-cost").append("\t" + "\t" + size);
+    $("#order-cost").append("\t" + "\t" + crust);
+    $("#order-cost").append("\t" + "\t" + topping);
+    $("#final-cost").text("\t" + "\t" + newPizzaOrder.totalCostOfOrders());
+     });     
+     $("#submitbutton").click(function(){
+           location.reload();
+        });
+
+
 });
+        
+
+       

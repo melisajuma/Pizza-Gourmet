@@ -12,6 +12,9 @@ h2{
 
     
 }
+#order cost{
+    font-size: 100px;
+}
 .header{
     background-image: url('https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
     height:100%;
@@ -66,6 +69,7 @@ input[type=text] , select {
 
   }
   #rev{
+    font-family: 'Indie Flower', cursive; 
       margin-top:17%;
       text-align:left;
       font-size: 20px;
@@ -79,7 +83,7 @@ input[type=text] , select {
     background-color: silver;
 }
 p{
-    font-family: 'Indie Flower', cursive; 
+    
 }
 #Contacts{
     color:black;

@@ -100,18 +100,23 @@
                     </select>
 
                     <p> Select the crust type you want: </p>
-                    <form>
+                    <form id="crust" >
                         <input type="radio" name="auto_renew" value="Crispy">Crispy<br>
                         <input type="radio" name="auto_renew" value="Glutten-free">Glutten-free<br>
                         <input type="radio" name="auto_renew" value="Stuffed"> Stuffed<br>
                     </form>
 
-                    <p> Select the topping you want: </p>
-                    <input type="checkbox" name="Chicken" value="Chicken">Chicken<br>
-                    <input type="checkbox" name="Beef" value="Beef">Beef<br>
-                    <input type="checkbox" name="Vegetables" value="Vegetables" checked="Vegetables"> Vegetables<br>
+                    <p > Select the topping you want: </p>
+                    <div class="topping">
+                            <input type="checkbox" name="Chicken" value="Chicken">Chicken<br>
+                            <input type="checkbox" name="Beef" value="Beef">Beef<br>
+                            <input type="checkbox" name="Vegetables" value="Vegetables" checked="Vegetables"> Vegetables<br>
+        
+                            <input type="submit" id="submitbutton">
+                            <p id="order-cost">Order-cost:</p>
 
-                    <input type="submit" id="submitbutton">
+                    </div>
+                   
                 </form>
 
             </div>
